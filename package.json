@@ -1,27 +1,34 @@
 {
-  "name": "aerofs-dev-pushstate-server",
+  "name": "https-pushstate-server",
   "version": "0.1.0",
-  "description": "HTML 5 PushState Server for AeroFS Dev Environment",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "description": "A simple HTML 5 PushState Server with HTTPS",
+  "author": "Rahul Jiresal <rahul@aerofs.com>",
+  "main": "./lib/https-pushstate-server.js",
+  "bin": {
+    "https-pushstate-server": "./bin/https-pushstate-server",
+    "hs": "./bin/https-pushstate-server"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/aerofs/aerofs-dev-pushstate-server.git"
+    "url": "git://github.com/aerofs/https-pushstate-server.git"
   },
   "keywords": [
     "html5",
     "pushstate",
-    "server"
+    "server",
+    "cli"
   ],
-  "author": "Rahul Jiresal <rahul@aerofs.com>",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "express": "^4.13.4",
+    "http": "0.0.0",
     "https": "^1.0.0",
     "lodash": "^4.13.1",
-    "optimist": "^0.6.1",
+    "minimist": "^1.2.0",
     "path": "^0.12.7"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/aerofs/https-pushstate-server/issues"
+  },
+  "private": true
 }

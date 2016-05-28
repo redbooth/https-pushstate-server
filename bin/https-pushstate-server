@@ -58,7 +58,7 @@ options.keyPath = keyPath;
 
 let started = function() {
 	console.log((options.https ? 'HTTPS' : 'HTTP') + ' pushstate-server started on port ' + options.port + '...');
-	_.size(options.dirs) > 0 ? console.log('Directories with static files: ', options.dirs) : null;
+	console.log('Directories with static files: ', options.dirs);
 };
 
 let stopped = function() {

@@ -14,13 +14,11 @@ For example,
 
 ### Install
 
-`npm install https-pushstate-server --save`   
-
-`npm install https://github.com/aerofs/https-pushstate-server —save`
+`npm install git+ssh://github.com/aerofs/https-pushstate-server.git --save`
 
 ### Usage
 
 ```shell
-$ https-pushstate-server -r rootDir -p 8000 -s -c certFile -k keyFile
+$ https-pushstate-server -r rootDir -p 8000 -s -c certFile -k keyFile -d assets,styles,scripts
 ```
 

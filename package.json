@@ -29,6 +29,5 @@
   },
   "bugs": {
     "url": "https://github.com/aerofs/https-pushstate-server/issues"
-  },
-  "private": true
+  }
 }

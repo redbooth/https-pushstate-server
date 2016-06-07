@@ -1,6 +1,6 @@
 {
   "name": "https-pushstate-server",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A simple HTML 5 PushState Server with HTTPS",
   "author": "Rahul Jiresal <rahul@aerofs.com>",
   "main": "./lib/https-pushstate-server.js",

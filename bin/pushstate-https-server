@@ -2,7 +2,7 @@
 
 'use strict';
 
-var pushstateServer = require('../lib/https-pushstate-server'),
+var pushstateServer = require('../lib/pushstate-https-server'),
 	_ = require('lodash'),
 	argv = require('minimist')(process.argv.slice(2));
 
@@ -10,7 +10,7 @@ let noArgs = _.isEmpty(argv._) && _.size(_.keys(argv)) == 1;
 
 if (argv.h || argv.help || noArgs) {
 	console.log([
-		'usage: https-pushstate-server [options]',
+		'usage: pushstate-https-server [options]',
 		'',
 		'options:',
 		'  -r           Root Directory',

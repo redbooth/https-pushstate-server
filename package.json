@@ -3,10 +3,10 @@
   "version": "0.1.1",
   "description": "A simple HTML 5 PushState Server with HTTPS",
   "author": "William Le <williamle8300@gmail.com>",
-  "main": "./lib/https-pushstate-server.js",
+  "main": "./lib/pushstate-https-server.js",
   "bin": {
-    "https-pushstate-server": "./bin/https-pushstate-server",
-    "hs": "./bin/https-pushstate-server"
+    "pushstate-https-server": "./bin/pushstate-https-server",
+    "hs": "./bin/pushstate-https-server"
   },
   "repository": {
     "type": "git",

@@ -1,4 +1,4 @@
-# https-pushstate-server
+# pushstate-https-server
 
 A simple static http/https file server that works with HTML5 Pushstate.
 
@@ -14,11 +14,11 @@ For example,
 
 ### Install
 
-`npm install git+ssh://github.com/aerofs/https-pushstate-server.git --save`
+`npm install git+ssh://github.com/williamle8300/pushstate-https-server.git --save`
 
 ### Usage
 
 ```shell
-$ https-pushstate-server -r rootDir -p 8000 -s -c certFile -k keyFile -d assets,styles,scripts
+$ pushstate-https-server -r rootDir -p 8000 -s -c certFile -k keyFile -d assets,styles,scripts
 ```
 

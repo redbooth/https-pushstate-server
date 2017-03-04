@@ -1,5 +1,7 @@
 # https-pushstate-server
 
+[![License](https://img.shields.io/cocoapods/l/ReactNativeAutoUpdater.svg?style=flat)](https://spdx.org/licenses/MIT)
+
 A simple static http/https file server that works with HTML5 Pushstate.
 
 Defaults all routes to `index.html` in the given root directory. Treats all other files to be static, and routes urls with the given static directories to make them relative to root.

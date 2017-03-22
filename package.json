@@ -1,16 +1,16 @@
 {
-  "name": "https-pushstate-server",
+  "name": "pushstate-https-server",
   "version": "0.1.1",
   "description": "A simple HTML 5 PushState Server with HTTPS",
-  "author": "Rahul Jiresal <rahul@aerofs.com>",
-  "main": "./lib/https-pushstate-server.js",
+  "author": "William Le <williamle8300@gmail.com>",
+  "main": "./lib/pushstate-https-server.js",
   "bin": {
-    "https-pushstate-server": "./bin/https-pushstate-server",
-    "hs": "./bin/https-pushstate-server"
+    "pushstate-https-server": "./bin/pushstate-https-server",
+    "hs": "./bin/pushstate-https-server"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/aerofs/https-pushstate-server.git"
+    "url": "git://github.com/williamle8300/pushstate-https-server.git"
   },
   "keywords": [
     "html5",
@@ -28,6 +28,6 @@
     "path": "^0.12.7"
   },
   "bugs": {
-    "url": "https://github.com/aerofs/https-pushstate-server/issues"
+    "url": "https://github.com/williamle8300/pushstate-https-server/issues"
   }
 }

@@ -2,7 +2,7 @@
 
 'use strict';
 
-var pushstateServer = require('../lib/https-pushstate-server'),
+var pushstateServer = require('../lib/pushstate-https-server'),
 	_ = require('lodash'),
 	argv = require('minimist')(process.argv.slice(2));
 
@@ -10,10 +10,11 @@ let noArgs = _.isEmpty(argv._) && _.size(_.keys(argv)) == 1;
 
 if (argv.h || argv.help || noArgs) {
 	console.log([
-		'usage: https-pushstate-server [options]',
+		'usage: pushstate-https-server [options]',
 		'',
 		'options:',
 		'  -r           Root Directory',
+		'  -a						Address to bind [127.0.0.1]',
 		'  -p           Port to use [8080]',
 		'  -d           Directories with static files, comma separated',
 		'  -s           Enable HTTPS',
@@ -25,6 +26,7 @@ if (argv.h || argv.help || noArgs) {
 }
 
 var root = argv.r,
+	address = argv.a || '127.0.0.1',
 	port = argv.p || 8080,
 	dirs = _.isEmpty(argv.d) ? [] : _.split(argv.d, ','),
 	enableSSL = argv.s,
@@ -50,6 +52,7 @@ if (enableSSL) {
 
 let options = {};
 options.root = root;
+options.address = address;
 options.port = port;
 options.dirs = dirs;
 options.https = enableSSL;
